@@ -1,9 +1,9 @@
 [keyboard]
-name = "Piantor"
-product_name = "Piantor"
-vendor_id = 0x4c4b
-product_id = 0x4643
-manufacturer = "RMK"
+name = "piantor"
+product_name = "piantor"
+vendor_id: 0xBEEB
+product_id = 0x0001
+manufacturer = "beekeep"
 chip = "rp2040"
 
 [layout]
