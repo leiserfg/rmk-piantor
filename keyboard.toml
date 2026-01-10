@@ -1,25 +1,33 @@
 [keyboard]
-name = "piantor"
-product_name = "piantor"
-vendor_id: 0xBEEB
+name = "Piantor"
+product_name = "Piantor"
+vendor_id= 0xbeeb
 product_id = 0x0001
 manufacturer = "beekeep"
 chip = "rp2040"
 
+# [host]
+# vial_enabled = false
+
+[alias]
+
+
 [layout]
 rows = 4
 cols = 12
-layers = 1
+layers = 5
 keymap = [
     [
-    ["_","Q", "W", "E", "R", "T", "Y", "U", "I", "O", "P", "_"],
-    ["_","MT(A, LShift)", "LT(5, S)", "LT(1, D)", "LT(3, F)", "G", "H", "LT(4, J)", "LT(2, K)", "LT(6, L)", "MT(Semicolon, LShift)", "_"],
-    ["_","MT(Z, LGui)", "MT(X, LCtrl)", "MT(C, LAlt)", "V", "B", "N", "M", "MT(Comma, LAlt)", "MT(Dot, LCtrl)", "MT(Slash, LGui)", "_"],
-    ["_","_", "_", "_", "Enter", "Space", "Backspace", "Tab", "_", "_", "_", "_"],
-    ]
+       ["_", "B", "L", "D", "C",   "V",    "J", "Y",   "O", "U", "comm", "bspc"],
+       ["_", "MT(N, LGui)", "MT(R, LAlt)", "MT(T, LCtrl)", "MT(S, LShift)",   "G",    "P", "MT(H, LShift)",   "MT(A,LCtrl)", "MT(E,LAlt)", "MT(I,LGui)",    "_"],
+       ["_", "X", "Q", "M", "W",   "Z",    "K", "F",   "'", ";", ".",    "_"],
+       ["_", "_", "_", "A", "spc", "lsft", "A", "ent", "A", "_", "_",    "_"],
+    ],
 ]
 
 [storage]
+# enabled = false
+clear_storage = true
 
 [behavior.morse]
 enable_flow_tap = true
