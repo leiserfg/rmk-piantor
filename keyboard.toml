@@ -13,39 +13,73 @@ chip = "rp2040"
 dprev = "_"
 dnext = "_"
 
+[behavior.combo]
+timeout = "25ms"
+combos = [
+    { actions = ["B", "L"], output = "Esc", layer = 0 },
+    { actions = ["Y", "O"], output = "SHIFTED(9)", layer = 0 },
+    { actions = ["O", "U"], output = "SHIFTED(0)", layer = 0 },
+    { actions = ["L", "D"], output = "SHIFTED([)", layer = 0 },
+    { actions = ["D", "C"], output = "SHIFTED(])", layer = 0 },
+    { actions = ["F", "'"], output = "[", layer = 0 },
+    { actions = ["'", ";"], output = "]", layer = 0 },
+    { actions = ["Y", "MT(H,LCtrl)"], output = "SHIFTED(=)", layer = 0 },
+    { actions = ["U", "comm"], output = "=", layer = 0 },
+    { actions = ["Q", "M"], output = "SHIFTED(,)", layer = 0 },
+    { actions = ["M", "W"], output = "SHIFTED(.)", layer = 0 },
+    { actions = ["D", "MT(T, LShift)"], output = "SHIFTED(3)", layer = 0 },
+    { actions = ["MT(T, LShift)", "M"], output = "\\", layer = 0 },
+    { actions = ["MT(A,LShift)", "'"], output = "/", layer = 0 },
+    { actions = ["O", "MT(A,LShift)"], output = "SHIFTED(8)", layer = 0 },
+    { actions = ["L", "MT(R, LAlt)"], output = "SHIFTED(2)", layer = 0 },
+    { actions = ["MT(R, LAlt)", "Q"], output = "`", layer = 0 },
+    { actions = ["U", "MT(E,LAlt)"], output = "SHIFTED(7)", layer = 0 },
+    { actions = ["MT(E,LAlt)", ";"], output = "SHIFTED(\\)", layer = 0 },
+    { actions = ["C", "MT(S,LCtrl)"], output = "SHIFTED(4)", layer = 0 },
+    { actions = ["MT(S,LCtrl)", "W"], output = "=", layer = 0 },
+    { actions = ["V", "G"], output = "SHIFTED(5)", layer = 0 },
+    { actions = ["G", "Z"], output = "SHIFTED(`)", layer = 0 },
+    { actions = ["MT(H,LCtrl)", "F"], output = "-", layer = 0 },
+    { actions = ["J", "P"], output = "SHIFTED(6)", layer = 0 },
+    { actions = ["P", "K"], output = "SHIFTED(-)", layer = 0 },
+]
+
 [layout]
 rows = 4
 cols = 12
 layers = 5
 keymap = [
+    # Base 
     [
-       ["_", "B",            "L",            "D",              "C",               "V",     "J",  "Y",               "O",            "U",         "comm",        "bspc"],
-       ["_", "MT(N, LGui)",  "MT(R, LAlt)",  "MT(T, LShift)",   "MT(S, LCtrl)",   "G",     "P",  "MT(H, LCtrl)",    "MT(A,LShift)", "MT(E,LAlt)","MT(I,LGui)",  "_"   ],
-       ["_", "X",            "Q",            "M",              "W",               "Z",     "K",  "F",               "'",            ";",         ".",           "_"   ],
-       ["_", "_",            "_",            "A",              "spc",             "lsft",  "A",  "ent",             "A",            "_",         "_",           "_"   ],
+       ["tab", "B",            "L",            "D",              "C",               "V",     "J",     "Y",               "O",            "U",         "comm",        "bspc"],
+       ["esc", "MT(N, LGui)",  "MT(R, LAlt)",  "MT(T, LShift)",  "MT(S,LCtrl)",     "G",     "P",     "MT(H,LCtrl)",     "MT(A,LShift)", "MT(E,LAlt)","MT(I,LGui)",  "ent"],
+       ["_",   "X",            "Q",            "M",              "W",               "Z",     "K",     "F",               "'",            ";",         ".",           "Del"   ],
+       ["_",   "_",            "_",            "A",              "spc",             "lsft",  "RAlt",  "ent",             "A",            "_",         "_",           "_"   ],
     ],
     # Numbers
     [
-       ["_", "_",            "7",           "8",             "9",              "_",   "_",  "_",               "_",            "_",         "_",           "_"],
-       ["_", "MT(0, LGui)", "MT(4, LAlt)", "MT(5, LShift)", "MT(6, LCtrl)",   "_",    "_",  "_",               "_",            "_",         "_",           "_"],
-       ["_", "_",            "1",           "2",             "3",             "_",    "_",  "_",               "_",            "_",         "_",           "_"],
-       ["_", "_",            "_",            "_",              "_",           "_",    "_",  "_",               "_",            "_",         "_",           "_"],
+       ["_", "_",            "7",           "8",            "9",             "_",    "_",  "_",               "_",            "_",         "_",           "_"],
+       ["_", "MT(0, LGui)", "MT(4, LAlt)", "MT(5, LShift)", "MT(6, LCtrl)",  "_",    "_",  "_",               "_",            "_",         "_",           "_"],
+       ["_", "_",            "1",           "2",            "3",             "_",    "_",  "_",               "_",            "_",         "_",           "_"],
+       ["_", "_",            "_",            "_",           "_",             "_",    "_",  "_",               "_",            "_",         "_",           "_"],
     ],
     # Fn + Media
     [
-       ["_", "F12",          "F7",           "F8",             "F9",              "_",     "_",    "mprv",            "volu",        "mnxt",      "_",           "_"],
-       ["_", "MT(F11,LGui)", "MT(F4,LAlt)",  "MT(F5,LShift)",  "MT(F6,LCtrl)",    "_",     "_",    "_",               "vold",        "_",      "_",           "_"],
-       ["_", "F10",          "F1",           "F2",             "F3",              "_",     "_",    "_",               "_",            "_",         "_",           "_"],
-       ["_", "_",            "_",            "_",              "_",               "_",     "mute", "mply",       "_",            "_",         "_",           "_"],
+       ["_", "F12",          "F7",           "F8",             "F9",              "_",     "_",    "mprv",      "volu",        "mnxt",      "_",           "_"],
+       ["_", "MT(F11,LGui)", "MT(F4,LAlt)",  "MT(F5,LShift)",  "MT(F6,LCtrl)",    "_",     "_",    "_",         "vold",        "_",         "_",           "_"],
+       ["_", "F10",          "F1",           "F2",             "F3",              "_",     "_",    "_",         "_",           "_",         "_",           "_"],
+       ["_", "_",            "_",            "_",              "_",               "_",     "mute", "mply",      "_",           "_",         "_",           "_"],
     ],
     # Navigation
     [
-       ["_", "_",       "_",            "SHIFTED(Tab)",        "Tab",             "_",     "PgUp", "Bspc",            "Up",           "Del",       "_",           "_"],
-       ["_", "LGui",         "LAlt",         "LShift",         "LCtrl",           "_",     "PgDn", "Left",            "Down",         "Up",        "Right",       "ent"],
-       ["_", "_",            "_",            "_",              "_",               "_",     "Ins",  "Tab",             "_",            "_",         "_",           "_"],
-       ["_", "_",            "_",            "_",              "_",               "_",     "_",    "Esc",             "_",            "_",         "_",           "_"],
+       ["_", "_",            "_",            "SHIFTED(Tab)",   "Tab",             "_",     "PgUp", "_",         "_",            "Del",       "_",           "_"],
+       ["_", "LGui",         "LAlt",         "LShift",         "LCtrl",           "_",     "PgDn", "Left",      "Down",         "Up",        "Right",       "_"],
+       ["_", "_",            "_",            "_",              "_",               "_",     "Ins",  "Tab",       "_",            "_",         "_",           "_"],
+       ["_", "_",            "_",            "_",              "_",               "_",     "_",    "Esc",       "_",            "_",         "_",           "_"],
     ],
 ]
+
+
 
 [storage]
 # enabled = false
@@ -60,6 +94,7 @@ gap_timeout = "250ms"
 
 [rmk]
 debounce_time=50
+combo_max_num=30
 
 [split]
 connection = "serial"

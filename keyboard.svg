@@ -1,0 +1,488 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 2200" width="1600" height="2200">
+  <defs>
+    <style>
+      .layer-title { font-family: Arial, sans-serif; font-size: 28px; font-weight: bold; fill: #333; }
+      .key { fill: #f0f0f0; stroke: #333; stroke-width: 2; rx: 6; }
+      .key-empty { fill: #fafafa; stroke: #ccc; stroke-width: 1; stroke-dasharray: 3,3; rx: 6; }
+      .key-text { font-family: 'Courier New', monospace; font-size: 12px; fill: #000; text-anchor: middle; }
+      .key-small { font-size: 9px; }
+      .empty-label { font-family: Arial, sans-serif; font-size: 10px; fill: #999; text-anchor: middle; }
+      .legend { font-family: Arial, sans-serif; font-size: 14px; fill: #666; }
+      .combo-line { stroke: #003366; stroke-width: 3; fill: none; opacity: 0.7; }
+      .combo-key { fill: #003366; stroke: #001a33; stroke-width: 1.5; rx: 3; }
+      .combo-text { font-family: 'Courier New', monospace; font-size: 8px; fill: #fff; text-anchor: middle; font-weight: bold; }
+      .combo-overlay { fill: #003366; stroke: #001a33; stroke-width: 2; rx: 6; opacity: 0.95; }
+      .combo-overlay-text { font-family: 'Courier New', monospace; font-size: 11px; fill: #fff; text-anchor: middle; font-weight: bold; }
+    </style>
+  </defs>
+
+  <!-- Layer 0: Base -->
+  <g id="layer0" transform="translate(50, 50)">
+    <text x="400" y="0" class="layer-title">Layer 0: Base</text>
+
+    <!-- Left half -->
+    <rect x="0" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="25" y="70" class="key-text ">TAB</text>
+    <rect x="60" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="85" y="70" class="key-text ">B</text>
+    <rect x="120" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="145" y="60" class="key-text ">L</text>
+    <rect x="180" y="20" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="205" y="50" class="key-text ">D</text>
+    <rect x="240" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="265" y="60" class="key-text ">C</text>
+    <rect x="300" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="325" y="70" class="key-text ">V</text>
+    <rect x="0" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="25" y="130" class="key-text ">ESC</text>
+    <rect x="60" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="85" y="130" class="key-text key-small">N/Gui</text>
+    <rect x="120" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="145" y="120" class="key-text key-small">R/Alt</text>
+    <rect x="180" y="80" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="205" y="110" class="key-text key-small">T/Sft</text>
+    <rect x="240" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="265" y="120" class="key-text key-small">S/Ctl</text>
+    <rect x="300" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="325" y="130" class="key-text ">G</text>
+    <rect x="0" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="188" class="empty-label">—</text>
+    <rect x="60" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="85" y="190" class="key-text ">X</text>
+    <rect x="120" y="150" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="145" y="180" class="key-text ">Q</text>
+    <rect x="180" y="140" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="205" y="170" class="key-text ">M</text>
+    <rect x="240" y="150" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="265" y="180" class="key-text ">W</text>
+    <rect x="300" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="325" y="190" class="key-text ">Z</text>
+    <rect x="180" y="220" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="205" y="250" class="key-text ">A</text>
+    <rect x="240" y="235" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="265" y="265" class="key-text ">SPC</text>
+    <rect x="300" y="250" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="325" y="280" class="key-text key-small">LSFT</text>
+
+    <!-- Right half -->
+    <rect x="500" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="525" y="70" class="key-text ">J</text>
+    <rect x="560" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="585" y="60" class="key-text ">Y</text>
+    <rect x="620" y="20" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="645" y="50" class="key-text ">O</text>
+    <rect x="680" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="705" y="60" class="key-text ">U</text>
+    <rect x="740" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="765" y="70" class="key-text ">,</text>
+    <rect x="800" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="825" y="70" class="key-text key-small">BSPC</text>
+    <rect x="500" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="525" y="130" class="key-text ">P</text>
+    <rect x="560" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="585" y="120" class="key-text key-small">H/Ctl</text>
+    <rect x="620" y="80" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="645" y="110" class="key-text key-small">A/Sft</text>
+    <rect x="680" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="705" y="120" class="key-text key-small">E/Alt</text>
+    <rect x="740" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="765" y="130" class="key-text key-small">I/Gui</text>
+    <rect x="800" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="825" y="130" class="key-text ">ENT</text>
+    <rect x="500" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="525" y="190" class="key-text ">K</text>
+    <rect x="560" y="150" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="585" y="180" class="key-text ">F</text>
+    <rect x="620" y="140" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="645" y="170" class="key-text ">&apos;</text>
+    <rect x="680" y="150" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="705" y="180" class="key-text ">;</text>
+    <rect x="740" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="765" y="190" class="key-text ">.</text>
+    <rect x="800" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="825" y="190" class="key-text ">Del</text>
+    <rect x="500" y="250" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="525" y="280" class="key-text key-small">RAlt</text>
+    <rect x="560" y="235" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="585" y="265" class="key-text ">ENT</text>
+    <rect x="620" y="220" width="50" height="50" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="645" y="250" class="key-text ">A</text>
+
+    <!-- Combos -->
+    <rect x="101.0" y="46.0" width="28" height="28" class="combo-overlay"/>
+    <text x="115.0" y="65.0" class="combo-overlay-text">Esc</text>
+    <rect x="601.0" y="36.0" width="28" height="28" class="combo-overlay"/>
+    <text x="615.0" y="55.0" class="combo-overlay-text">(</text>
+    <rect x="661.0" y="36.0" width="28" height="28" class="combo-overlay"/>
+    <text x="675.0" y="55.0" class="combo-overlay-text">)</text>
+    <rect x="161.0" y="36.0" width="28" height="28" class="combo-overlay"/>
+    <text x="175.0" y="55.0" class="combo-overlay-text">{</text>
+    <rect x="221.0" y="36.0" width="28" height="28" class="combo-overlay"/>
+    <text x="235.0" y="55.0" class="combo-overlay-text">}</text>
+    <rect x="601.0" y="156.0" width="28" height="28" class="combo-overlay"/>
+    <text x="615.0" y="175.0" class="combo-overlay-text">[</text>
+    <rect x="661.0" y="156.0" width="28" height="28" class="combo-overlay"/>
+    <text x="675.0" y="175.0" class="combo-overlay-text">]</text>
+    <rect x="571.0" y="71.0" width="28" height="28" class="combo-overlay"/>
+    <text x="585.0" y="90.0" class="combo-overlay-text">+</text>
+    <rect x="721.0" y="46.0" width="28" height="28" class="combo-overlay"/>
+    <text x="735.0" y="65.0" class="combo-overlay-text">=</text>
+    <rect x="161.0" y="156.0" width="28" height="28" class="combo-overlay"/>
+    <text x="175.0" y="175.0" class="combo-overlay-text">&lt;</text>
+    <rect x="221.0" y="156.0" width="28" height="28" class="combo-overlay"/>
+    <text x="235.0" y="175.0" class="combo-overlay-text">&gt;</text>
+    <rect x="191.0" y="61.0" width="28" height="28" class="combo-overlay"/>
+    <text x="205.0" y="80.0" class="combo-overlay-text">#</text>
+    <rect x="191.0" y="121.0" width="28" height="28" class="combo-overlay"/>
+    <text x="205.0" y="140.0" class="combo-overlay-text">\</text>
+    <rect x="631.0" y="121.0" width="28" height="28" class="combo-overlay"/>
+    <text x="645.0" y="140.0" class="combo-overlay-text">/</text>
+    <rect x="631.0" y="61.0" width="28" height="28" class="combo-overlay"/>
+    <text x="645.0" y="80.0" class="combo-overlay-text">*</text>
+    <rect x="131.0" y="71.0" width="28" height="28" class="combo-overlay"/>
+    <text x="145.0" y="90.0" class="combo-overlay-text">@</text>
+    <rect x="131.0" y="131.0" width="28" height="28" class="combo-overlay"/>
+    <text x="145.0" y="150.0" class="combo-overlay-text">`</text>
+    <rect x="691.0" y="71.0" width="28" height="28" class="combo-overlay"/>
+    <text x="705.0" y="90.0" class="combo-overlay-text">&amp;</text>
+    <rect x="691.0" y="131.0" width="28" height="28" class="combo-overlay"/>
+    <text x="705.0" y="150.0" class="combo-overlay-text">|</text>
+    <rect x="251.0" y="71.0" width="28" height="28" class="combo-overlay"/>
+    <text x="265.0" y="90.0" class="combo-overlay-text">$</text>
+    <rect x="251.0" y="131.0" width="28" height="28" class="combo-overlay"/>
+    <text x="265.0" y="150.0" class="combo-overlay-text">=</text>
+    <rect x="311.0" y="81.0" width="28" height="28" class="combo-overlay"/>
+    <text x="325.0" y="100.0" class="combo-overlay-text">%</text>
+    <rect x="311.0" y="141.0" width="28" height="28" class="combo-overlay"/>
+    <text x="325.0" y="160.0" class="combo-overlay-text">~</text>
+    <rect x="571.0" y="131.0" width="28" height="28" class="combo-overlay"/>
+    <text x="585.0" y="150.0" class="combo-overlay-text">-</text>
+    <rect x="511.0" y="81.0" width="28" height="28" class="combo-overlay"/>
+    <text x="525.0" y="100.0" class="combo-overlay-text">^</text>
+    <rect x="511.0" y="141.0" width="28" height="28" class="combo-overlay"/>
+    <text x="525.0" y="160.0" class="combo-overlay-text">_</text>
+  </g>
+
+  <!-- Layer 1: Numbers -->
+  <g id="layer1" transform="translate(50, 400)">
+    <text x="400" y="0" class="layer-title">Layer 1: Numbers</text>
+
+    <!-- Left half -->
+    <rect x="0" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="68" class="empty-label">—</text>
+    <rect x="60" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="85" y="68" class="empty-label">—</text>
+    <rect x="120" y="30" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="145" y="60" class="key-text ">7</text>
+    <rect x="180" y="20" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="205" y="50" class="key-text ">8</text>
+    <rect x="240" y="30" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="265" y="60" class="key-text ">9</text>
+    <rect x="300" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="68" class="empty-label">—</text>
+    <rect x="0" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="128" class="empty-label">—</text>
+    <rect x="60" y="100" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="85" y="130" class="key-text key-small">0/Gui</text>
+    <rect x="120" y="90" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="145" y="120" class="key-text key-small">4/Alt</text>
+    <rect x="180" y="80" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="205" y="110" class="key-text key-small">5/Sft</text>
+    <rect x="240" y="90" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="265" y="120" class="key-text key-small">6/Ctl</text>
+    <rect x="300" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="128" class="empty-label">—</text>
+    <rect x="0" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="188" class="empty-label">—</text>
+    <rect x="60" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="85" y="188" class="empty-label">—</text>
+    <rect x="120" y="150" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="145" y="180" class="key-text ">1</text>
+    <rect x="180" y="140" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="205" y="170" class="key-text ">2</text>
+    <rect x="240" y="150" width="50" height="50" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="265" y="180" class="key-text ">3</text>
+    <rect x="300" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="188" class="empty-label">—</text>
+    <rect x="180" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="205" y="248" class="empty-label">—</text>
+    <rect x="240" y="235" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="265" y="263" class="empty-label">—</text>
+    <rect x="300" y="250" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="278" class="empty-label">—</text>
+
+    <!-- Right half -->
+    <rect x="500" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="68" class="empty-label">—</text>
+    <rect x="560" y="30" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="58" class="empty-label">—</text>
+    <rect x="620" y="20" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="48" class="empty-label">—</text>
+    <rect x="680" y="30" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="58" class="empty-label">—</text>
+    <rect x="740" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="68" class="empty-label">—</text>
+    <rect x="800" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="68" class="empty-label">—</text>
+    <rect x="500" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="128" class="empty-label">—</text>
+    <rect x="560" y="90" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="118" class="empty-label">—</text>
+    <rect x="620" y="80" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="108" class="empty-label">—</text>
+    <rect x="680" y="90" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="118" class="empty-label">—</text>
+    <rect x="740" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="128" class="empty-label">—</text>
+    <rect x="800" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="128" class="empty-label">—</text>
+    <rect x="500" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="188" class="empty-label">—</text>
+    <rect x="560" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="178" class="empty-label">—</text>
+    <rect x="620" y="140" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="168" class="empty-label">—</text>
+    <rect x="680" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="178" class="empty-label">—</text>
+    <rect x="740" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="188" class="empty-label">—</text>
+    <rect x="800" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="188" class="empty-label">—</text>
+    <rect x="500" y="250" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="278" class="empty-label">—</text>
+    <rect x="560" y="235" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="263" class="empty-label">—</text>
+    <rect x="620" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="248" class="empty-label">—</text>
+
+    <!-- Combos -->
+  </g>
+
+  <!-- Layer 2: Fn + Media -->
+  <g id="layer2" transform="translate(50, 750)">
+    <text x="400" y="0" class="layer-title">Layer 2: Fn + Media</text>
+
+    <!-- Left half -->
+    <rect x="0" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="68" class="empty-label">—</text>
+    <rect x="60" y="40" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="85" y="70" class="key-text ">F12</text>
+    <rect x="120" y="30" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="145" y="60" class="key-text ">F7</text>
+    <rect x="180" y="20" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="205" y="50" class="key-text ">F8</text>
+    <rect x="240" y="30" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="265" y="60" class="key-text ">F9</text>
+    <rect x="300" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="68" class="empty-label">—</text>
+    <rect x="0" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="128" class="empty-label">—</text>
+    <rect x="60" y="100" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="85" y="130" class="key-text key-small">F11/Gui</text>
+    <rect x="120" y="90" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="145" y="120" class="key-text key-small">F4/Alt</text>
+    <rect x="180" y="80" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="205" y="110" class="key-text key-small">F5/Sft</text>
+    <rect x="240" y="90" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="265" y="120" class="key-text key-small">F6/Ctl</text>
+    <rect x="300" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="128" class="empty-label">—</text>
+    <rect x="0" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="188" class="empty-label">—</text>
+    <rect x="60" y="160" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="85" y="190" class="key-text ">F10</text>
+    <rect x="120" y="150" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="145" y="180" class="key-text ">F1</text>
+    <rect x="180" y="140" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="205" y="170" class="key-text ">F2</text>
+    <rect x="240" y="150" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="265" y="180" class="key-text ">F3</text>
+    <rect x="300" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="188" class="empty-label">—</text>
+    <rect x="180" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="205" y="248" class="empty-label">—</text>
+    <rect x="240" y="235" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="265" y="263" class="empty-label">—</text>
+    <rect x="300" y="250" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="278" class="empty-label">—</text>
+
+    <!-- Right half -->
+    <rect x="500" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="68" class="empty-label">—</text>
+    <rect x="560" y="30" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="585" y="60" class="key-text key-small">PREV</text>
+    <rect x="620" y="20" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="645" y="50" class="key-text key-small">VOL+</text>
+    <rect x="680" y="30" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="705" y="60" class="key-text key-small">NEXT</text>
+    <rect x="740" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="68" class="empty-label">—</text>
+    <rect x="800" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="68" class="empty-label">—</text>
+    <rect x="500" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="128" class="empty-label">—</text>
+    <rect x="560" y="90" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="118" class="empty-label">—</text>
+    <rect x="620" y="80" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="645" y="110" class="key-text key-small">VOL-</text>
+    <rect x="680" y="90" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="118" class="empty-label">—</text>
+    <rect x="740" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="128" class="empty-label">—</text>
+    <rect x="800" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="128" class="empty-label">—</text>
+    <rect x="500" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="188" class="empty-label">—</text>
+    <rect x="560" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="178" class="empty-label">—</text>
+    <rect x="620" y="140" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="168" class="empty-label">—</text>
+    <rect x="680" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="178" class="empty-label">—</text>
+    <rect x="740" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="188" class="empty-label">—</text>
+    <rect x="800" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="188" class="empty-label">—</text>
+    <rect x="500" y="250" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="525" y="280" class="key-text key-small">MUTE</text>
+    <rect x="560" y="235" width="50" height="50" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="585" y="265" class="key-text key-small">PLAY</text>
+    <rect x="620" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="248" class="empty-label">—</text>
+
+    <!-- Combos -->
+  </g>
+
+  <!-- Layer 3: Navigation -->
+  <g id="layer3" transform="translate(50, 1100)">
+    <text x="400" y="0" class="layer-title">Layer 3: Navigation</text>
+
+    <!-- Left half -->
+    <rect x="0" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="68" class="empty-label">—</text>
+    <rect x="60" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="85" y="68" class="empty-label">—</text>
+    <rect x="120" y="30" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="145" y="58" class="empty-label">—</text>
+    <rect x="180" y="20" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="205" y="50" class="key-text ">S-Tab</text>
+    <rect x="240" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="265" y="60" class="key-text ">Tab</text>
+    <rect x="300" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="68" class="empty-label">—</text>
+    <rect x="0" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="128" class="empty-label">—</text>
+    <rect x="60" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="85" y="130" class="key-text key-small">LGui</text>
+    <rect x="120" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="145" y="120" class="key-text key-small">LAlt</text>
+    <rect x="180" y="80" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="205" y="110" class="key-text key-small">LSft</text>
+    <rect x="240" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="265" y="120" class="key-text key-small">LCtl</text>
+    <rect x="300" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="128" class="empty-label">—</text>
+    <rect x="0" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="25" y="188" class="empty-label">—</text>
+    <rect x="60" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="85" y="188" class="empty-label">—</text>
+    <rect x="120" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="145" y="178" class="empty-label">—</text>
+    <rect x="180" y="140" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="205" y="168" class="empty-label">—</text>
+    <rect x="240" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="265" y="178" class="empty-label">—</text>
+    <rect x="300" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="188" class="empty-label">—</text>
+    <rect x="180" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="205" y="248" class="empty-label">—</text>
+    <rect x="240" y="235" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="265" y="263" class="empty-label">—</text>
+    <rect x="300" y="250" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="325" y="278" class="empty-label">—</text>
+
+    <!-- Right half -->
+    <rect x="500" y="40" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="525" y="70" class="key-text key-small">PgUp</text>
+    <rect x="560" y="30" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="585" y="58" class="empty-label">—</text>
+    <rect x="620" y="20" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="48" class="empty-label">—</text>
+    <rect x="680" y="30" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="705" y="60" class="key-text ">Del</text>
+    <rect x="740" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="68" class="empty-label">—</text>
+    <rect x="800" y="40" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="68" class="empty-label">—</text>
+    <rect x="500" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="525" y="130" class="key-text key-small">PgDn</text>
+    <rect x="560" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="585" y="120" class="key-text key-small">Left</text>
+    <rect x="620" y="80" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="645" y="110" class="key-text key-small">Down</text>
+    <rect x="680" y="90" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="705" y="120" class="key-text ">Up</text>
+    <rect x="740" y="100" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="765" y="130" class="key-text key-small">Right</text>
+    <rect x="800" y="100" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="128" class="empty-label">—</text>
+    <rect x="500" y="160" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="525" y="190" class="key-text ">Ins</text>
+    <rect x="560" y="150" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="585" y="180" class="key-text ">Tab</text>
+    <rect x="620" y="140" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="168" class="empty-label">—</text>
+    <rect x="680" y="150" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="705" y="178" class="empty-label">—</text>
+    <rect x="740" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="765" y="188" class="empty-label">—</text>
+    <rect x="800" y="160" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="825" y="188" class="empty-label">—</text>
+    <rect x="500" y="250" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="525" y="278" class="empty-label">—</text>
+    <rect x="560" y="235" width="50" height="50" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="585" y="265" class="key-text ">Esc</text>
+    <rect x="620" y="220" width="50" height="50" rx="6" class="key-empty"/>
+    <text x="645" y="248" class="empty-label">—</text>
+
+    <!-- Combos -->
+  </g>
+
+  <g id="layer4" transform="translate(50, 1450)">
+    <text x="400" y="0" class="layer-title">Layer 4: 4</text>
+    <text x="400" y="150" class="legend" style="font-size: 18px;">(Layer is defined but has no key mappings in keyboard.toml)</text>
+  </g>
+
+  <!-- Legend -->
+  <g id="legend" transform="translate(50, 1800)">
+    <text x="0" y="0" class="layer-title">Legend &amp; Info</text>
+
+    <text x="0" y="40" class="legend">• Keyboard: Piantor (Split 3×6+3 layout)</text>
+    <text x="0" y="65" class="legend">• Total Keys: 42 (21 per side)</text>
+    <text x="0" y="90" class="legend">• Combo: B + L = Esc</text>
+    <text x="0" y="115" class="legend">• Combo: Y + O = SHIFTED(9)</text>
+    <text x="0" y="140" class="legend">• Combo: O + U = SHIFTED(0)</text>
+    <text x="0" y="115" class="legend">• MT() = Mod-Tap (hold for modifier, tap for key)</text>
+
+    <rect x="0" y="140" width="50" height="30" rx="6" class="key" style="fill: #f0f0f0"/>
+    <text x="60" y="160" class="legend">Layer 0: Base</text>
+
+    <rect x="0" y="180" width="50" height="30" rx="6" class="key" style="fill: #e8f4f8"/>
+    <text x="60" y="200" class="legend">Layer 1: Numbers</text>
+
+    <rect x="0" y="220" width="50" height="30" rx="6" class="key" style="fill: #fff4e8"/>
+    <text x="60" y="240" class="legend">Layer 2: Fn + Media</text>
+
+    <rect x="0" y="260" width="50" height="30" rx="6" class="key" style="fill: #f0e8ff"/>
+    <text x="60" y="280" class="legend">Layer 3: Navigation</text>
+
+    <rect x="0" y="300" width="50" height="30" rx="6" class="key" style="fill: #f8e8f0"/>
+    <text x="60" y="320" class="legend">Layer 4: 4</text>
+
+    <rect x="0" y="340" width="50" height="30" rx="6" class="key-empty"/>
+    <text x="60" y="360" class="legend">Transparent key (passes through to lower layer)</text>
+  </g>
+
+  <!-- Footer -->
+  <text x="1550" y="2150" class="legend" text-anchor="end">Generated from keyboard.toml and vial.json</text>
+</svg>
